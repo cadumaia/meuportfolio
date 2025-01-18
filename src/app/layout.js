@@ -1,8 +1,9 @@
 import localFont from "next/font/local";
 import { Montserrat } from "next/font/google"
 import { Open_Sans } from "next/font/google"
-
 import "./globals.css";
+
+
 
 const opensans = Open_Sans ({
   subsets: ['latin'],
@@ -30,13 +31,14 @@ export const metadata = {
   description: "Cadu Maia",
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
         className={`${opensans.variable, montserrat.variable} antialiased`}
       >
-        {children}
+      {children}
       </body>
     </html>
   );
